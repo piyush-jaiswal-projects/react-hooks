@@ -16,6 +16,12 @@
   height: 84vh;
 }
 
+.Home{
+  width: 50vw;
+  margin: auto;
+  text-align: left;
+}
+
 .dark{
   background-color: black;
   color: white;

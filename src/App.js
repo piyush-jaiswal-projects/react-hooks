@@ -6,7 +6,8 @@ import './App.css';
 // import UseRefHook from './hooks/UseRefHook';
 // import ForwardRef from './hooks/ForwardRef';
 // import UseReducerHook from './hooks/UseReducerHook';
-import {ContextAPI} from './hooks/ContextAPI';
+// import {ContextAPI} from './hooks/ContextAPI';
+import Home from './component/home';
  
 
 function App() {
@@ -17,8 +18,8 @@ function App() {
       --------------------------------------------------------------------------------------
       <br />
 
-      {/* Hook Component */}
-      <ContextAPI />
+      {/* Replace Home Component by Hook Component */}
+      <Home />
     </div>
   );
 }
