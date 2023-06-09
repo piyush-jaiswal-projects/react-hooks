@@ -1,30 +1,11 @@
 import '../App.css';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 function UseStateHook() {
     const [data, setData] = useState({
         count: 0,
         id: 'X'
     });
-
-    useEffect(() => { 
-        if (data.count === 1) {
-            setData((prev) => {
-                return {
-                    ...prev,
-                    id: 'ONE'
-                }
-            });
-        }
-        else {
-            setData((prev) => {
-                return {
-                    ...prev,
-                    id: 'X'
-                }
-            });
-        }
-    }, [data.count]);
 
     const updateCount = (operator) => {
         operator === '+'
@@ -53,7 +34,13 @@ function UseStateHook() {
             <span>{data.count}</span>
             <button onClick={() => { updateCount('+') }}>+</button>
             <br />
-            <span>{data.id}</span>
+            <h3>Explanation: </h3>
+            <p>
+                Whenever you click on + or - button, you are trying to update the state of the
+                variable dynamically with the help of update function provided by useState hook.
+                So whenever state changes, hook explicitly forces the updation of component by
+                re-rendering.
+            </p>
         </div>
     );
 }

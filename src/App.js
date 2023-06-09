@@ -1,5 +1,12 @@
 import './App.css';
-import UseMemoHook from './hooks/UseMemoHook';
+// import UseMemoHook from './hooks/UseMemoHook';
+// import UseStateHook from './hooks/UseStateHook';
+// import UseEffectHook from './hooks/UseEffectHook';
+// import UseCallbackHook from './hooks/UseCallbackHook';
+// import UseRefHook from './hooks/UseRefHook';
+// import ForwardRef from './hooks/ForwardRef';
+// import UseReducerHook from './hooks/UseReducerHook';
+import {ContextAPI} from './hooks/ContextAPI';
  
 
 function App() {
@@ -10,8 +17,8 @@ function App() {
       --------------------------------------------------------------------------------------
       <br />
 
-      {/* Hook File */}
-      <UseMemoHook />
+      {/* Hook Component */}
+      <ContextAPI />
     </div>
   );
 }

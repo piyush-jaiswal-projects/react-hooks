@@ -3,8 +3,7 @@
 }
 
 .App button{
-  font-size: 25px;
-  padding: 15px;
+  font-size: 15px;
   margin: 5px;
 }
 
@@ -12,4 +11,19 @@
   font-size: 30px;
   margin: auto 10px;
 }
+
+.App div{
+  height: 84vh;
+}
+
+.dark{
+  background-color: black;
+  color: white;
+}
+
+.light{
+  background-color: whitesmoke;
+  color: black;
+}
+
 
